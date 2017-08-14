@@ -87,7 +87,8 @@ public class NodeSelector : MonoBehaviour, IInputClickHandler, IInputHandler
     }
     public void AddInstance()
     {
-        url = "http://54.213.229.10:5000/launch";
+        /******Replace the IP in the following URL with the IP of your hadoop-master node.*****/
+        url = "http://0.0.0.0:5000/launch";
         // Create a GET web request and store it
         UnityWebRequest apiRequest = UnityWebRequest.Get(url);
         // Wait until the data has been received before continuing the loop
@@ -104,11 +105,14 @@ public class NodeSelector : MonoBehaviour, IInputClickHandler, IInputHandler
 
             var ip = item.GetComponent<Text>();
             //Debug.Log(ip.text);
-            if (ip.text == "172.31.24.140" || ip.text == "54.213.229.10")
+
+            /*****Put your hadoop-master private and public IP in the line below*****/
+            if (ip.text == "172.31.24.140" || ip.text == "0.0.0.0")
             {
                 displayManager.DisplayMessage("Cannot remove master node!!");
                 return;
             }
+            /*****Put your hadoop-worker1 and hadoop-worker2 private IP in the line below*****/
             if (ip.text == "172.31.1.212" || ip.text == "172.31.9.89")
             {
                 displayManager.DisplayMessage("Cannot remove the default data nodes!!");
@@ -116,7 +120,9 @@ public class NodeSelector : MonoBehaviour, IInputClickHandler, IInputHandler
             }
             string hostname = "ip-" + ip.text.Replace(".", "-");
             var server = GameObject.Find(hostname);
-            url = "http://54.213.229.10:5000/destroy?ip=" + ip.text;
+
+            /******Replace the IP in the following URL with the IP of your hadoop-master node.*****/
+            url = "http://0.0.0.0:5000/destroy?ip=" + ip.text;
             // Create a GET web request and store it
             UnityWebRequest apiRequestDestroy = UnityWebRequest.Get(url);
             //Destroy(server);

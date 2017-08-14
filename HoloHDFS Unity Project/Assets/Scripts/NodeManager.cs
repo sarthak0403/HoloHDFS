@@ -19,7 +19,8 @@ public class NodeManager : MonoBehaviour {
 	}
     public void AddInstance()
     {
-        url = "http://54.213.229.10:5000/launch";
+        /******Replace the IP in the following URL with the IP of your hadoop-master node.*****/
+        url = "http://0.0.0.0:5000/launch";
         // Create a GET web request and store it
         UnityWebRequest apiRequestadd = UnityWebRequest.Get(url);
         // Wait until the data has been received before continuing the loop

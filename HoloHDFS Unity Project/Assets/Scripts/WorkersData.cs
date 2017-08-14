@@ -33,8 +33,10 @@ public class WorkersData : MonoBehaviour {
     {
         // Get and store the cube's transform
         //cubeTransform = gameObject.transform;
+
         // Assign the URI to a variable so that it's easier to handle
-        url = "http://54.213.229.10:5000/workers";
+        /******Replace the IP in the following URL with the IP of your hadoop-master node.*****/
+        url = "http://0.0.0.0:5000/workers";
         pos = new Vector3(0, 0, 0);
         if (workers == null)
         {

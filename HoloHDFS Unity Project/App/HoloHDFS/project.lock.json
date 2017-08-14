@@ -15778,10 +15778,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Data\\MSc Sem 3 Data\\HoloHDFS\\HoloHDFS\\App\\HoloHDFS\\HoloHDFS.csproj",
+      "projectUniqueName": "C:\\Data\\MSc Sem 3 Data\\HoloHDFS\\HoloHDFS Git\\HoloHDFS Unity Project\\App\\HoloHDFS\\HoloHDFS.csproj",
       "projectName": "HoloHDFS",
-      "projectPath": "C:\\Data\\MSc Sem 3 Data\\HoloHDFS\\HoloHDFS\\App\\HoloHDFS\\HoloHDFS.csproj",
-      "projectJsonPath": "C:\\Data\\MSc Sem 3 Data\\HoloHDFS\\HoloHDFS\\App\\HoloHDFS\\project.json",
+      "projectPath": "C:\\Data\\MSc Sem 3 Data\\HoloHDFS\\HoloHDFS Git\\HoloHDFS Unity Project\\App\\HoloHDFS\\HoloHDFS.csproj",
+      "projectJsonPath": "C:\\Data\\MSc Sem 3 Data\\HoloHDFS\\HoloHDFS Git\\HoloHDFS Unity Project\\App\\HoloHDFS\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {
