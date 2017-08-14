@@ -182,7 +182,7 @@ public class WorkersData : MonoBehaviour {
     {
         var halo = obj.GetComponentInChildren<Transform>().Find("Cube").GetComponent("Halo") as Behaviour;
         var usage = obj.GetComponentInChildren<Transform>().Find("cpuUsage").GetComponent<TextMesh>().text.Replace("%", "");
-        if (float.Parse(usage) >= 2.0)
+        if (float.Parse(usage) >= 20.0)
         {
             halo.enabled = true;
             //Debug.Log("Inside Halo if");
